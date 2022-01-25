@@ -76,13 +76,13 @@ extension RimsListViewController: UITableViewDataSource {
     }
 }
 
-//extension RimsListViewController: UITableViewDelegate{
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: "rimScanSegue", sender: self)
-//    }
-//
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let vc = segue.destination as! ImageViewController
-//        vc.rimName = "pateu"
-//    }
-//}
+extension RimsListViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "rimScanSegue", sender: self)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ImageViewController
+        vc.rimName = "pateu"
+    }
+}
