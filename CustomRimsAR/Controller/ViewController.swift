@@ -13,6 +13,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     var test : String = ""
     var detectionImage : UIImage?
+    var rimName: String = ""
     
     @IBOutlet var sceneView: ARSCNView!
     
@@ -106,7 +107,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             node.addChildNode(planeNode)
         
                 
-            if let pokeScene = SCNScene(named: "art.scnassets/basic_rim.scn"){
+            if let pokeScene = SCNScene(named: "art.scnassets/"+rimName+".scn"){
                 
                 if let pokeNode = pokeScene.rootNode.childNodes.first {
                     

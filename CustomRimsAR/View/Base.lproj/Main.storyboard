@@ -61,41 +61,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5sS-jB-1Rb">
-                                <rect key="frame" x="20" y="20" width="374" height="344"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sS-jB-1Rb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="397"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4v-tt-coR">
-                                <rect key="frame" x="174" y="392" width="67" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Send"/>
-                                <connections>
-                                    <action selector="send:" destination="MWF-Sd-KqU" eventType="touchUpInside" id="vzg-Kf-diP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQ0-JK-ftB">
-                                <rect key="frame" x="150" y="441" width="114" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQ0-JK-ftB">
+                                <rect key="frame" x="150" y="441" width="95.5" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Take photo"/>
                                 <connections>
                                     <action selector="takePhoto:" destination="MWF-Sd-KqU" eventType="touchUpInside" id="Lxe-T1-DSY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4v-tt-coR">
+                                <rect key="frame" x="179" y="530" width="57.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                                <connections>
+                                    <action selector="send:" destination="MWF-Sd-KqU" eventType="touchUpInside" id="vzg-Kf-diP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5bg-Dt-SBT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gQ0-JK-ftB" firstAttribute="top" secondItem="e4v-tt-coR" secondAttribute="bottom" constant="18" id="JJL-UF-AfI"/>
-                            <constraint firstItem="5sS-jB-1Rb" firstAttribute="top" secondItem="5bg-Dt-SBT" secondAttribute="top" constant="20" id="LTS-Pb-ibB"/>
-                            <constraint firstItem="5bg-Dt-SBT" firstAttribute="bottom" secondItem="e4v-tt-coR" secondAttribute="bottom" constant="385" id="UeC-Dn-JJF"/>
-                            <constraint firstItem="5bg-Dt-SBT" firstAttribute="trailing" secondItem="gQ0-JK-ftB" secondAttribute="trailing" constant="150" id="YcS-Vr-Xmh"/>
-                            <constraint firstItem="5bg-Dt-SBT" firstAttribute="trailing" secondItem="5sS-jB-1Rb" secondAttribute="trailing" constant="20" id="aCU-Bm-br4"/>
-                            <constraint firstItem="e4v-tt-coR" firstAttribute="leading" secondItem="5bg-Dt-SBT" secondAttribute="leading" constant="174" id="bAy-Tz-kYH"/>
-                            <constraint firstItem="5sS-jB-1Rb" firstAttribute="leading" secondItem="5bg-Dt-SBT" secondAttribute="leading" constant="20" id="k6h-ZX-KhG"/>
-                            <constraint firstItem="gQ0-JK-ftB" firstAttribute="top" secondItem="e4v-tt-coR" secondAttribute="bottom" constant="18" id="kQH-r2-8ld"/>
-                            <constraint firstItem="5bg-Dt-SBT" firstAttribute="trailing" secondItem="e4v-tt-coR" secondAttribute="trailing" constant="173" id="l47-bg-ZYW"/>
-                            <constraint firstItem="e4v-tt-coR" firstAttribute="top" secondItem="5sS-jB-1Rb" secondAttribute="bottom" constant="28" id="ngp-l6-tFr"/>
-                            <constraint firstItem="gQ0-JK-ftB" firstAttribute="leading" secondItem="5bg-Dt-SBT" secondAttribute="leading" constant="150" id="pYI-7U-iIL"/>
-                            <constraint firstItem="5bg-Dt-SBT" firstAttribute="bottom" secondItem="gQ0-JK-ftB" secondAttribute="bottom" constant="336" id="uvQ-oQ-smv"/>
+                            <constraint firstItem="5sS-jB-1Rb" firstAttribute="top" secondItem="5bg-Dt-SBT" secondAttribute="top" id="LTS-Pb-ibB"/>
+                            <constraint firstItem="5bg-Dt-SBT" firstAttribute="trailing" secondItem="5sS-jB-1Rb" secondAttribute="trailing" id="aCU-Bm-br4"/>
+                            <constraint firstItem="5sS-jB-1Rb" firstAttribute="leading" secondItem="5bg-Dt-SBT" secondAttribute="leading" id="k6h-ZX-KhG"/>
+                            <constraint firstItem="e4v-tt-coR" firstAttribute="top" secondItem="5sS-jB-1Rb" secondAttribute="bottom" constant="-5" id="ngp-l6-tFr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gg6-Fm-98p"/>
